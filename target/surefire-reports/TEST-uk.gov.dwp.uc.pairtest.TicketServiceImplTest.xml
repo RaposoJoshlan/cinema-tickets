@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="uk.gov.dwp.uc.pairtest.TicketServiceImplTest" time="1.472" tests="9" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="uk.gov.dwp.uc.pairtest.TicketServiceImplTest" time="1.541" tests="9" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="GB"/>
     <property name="sun.boot.library.path" value="C:\Users\Josclen Raposo\.jdks\openjdk-17.0.2\bin"/>
-    <property name="sun.java.command" value="C:\Users\JOSCLE~1\AppData\Local\Temp\surefire8138052329190719780\surefirebooter916685443816580682.jar C:\Users\Josclen Raposo\AppData\Local\Temp\surefire8138052329190719780 2023-01-02T13-26-08_704-jvmRun1 surefire17997625001914096566tmp surefire_08091997949671991128tmp"/>
+    <property name="sun.java.command" value="C:\Users\JOSCLE~1\AppData\Local\Temp\surefire14820902128245747630\surefirebooter6120370167623952933.jar C:\Users\Josclen Raposo\AppData\Local\Temp\surefire14820902128245747630 2023-01-02T14-05-21_492-jvmRun1 surefire3064966260050346052tmp surefire_04193301322564741080tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\Josclen Raposo\Desktop\cinema-tickets\target\test-classes;C:\Users\Josclen Raposo\Desktop\cinema-tickets\target\classes;C:\Users\Josclen Raposo\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\Josclen Raposo\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\Josclen Raposo\.m2\repository\org\mockito\mockito-core\4.10.0\mockito-core-4.10.0.jar;C:\Users\Josclen Raposo\.m2\repository\net\bytebuddy\byte-buddy\1.12.19\byte-buddy-1.12.19.jar;C:\Users\Josclen Raposo\.m2\repository\net\bytebuddy\byte-buddy-agent\1.12.19\byte-buddy-agent-1.12.19.jar;C:\Users\Josclen Raposo\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\Josclen Raposo\.m2\repository\org\mockito\mockito-junit-jupiter\4.10.0\mockito-junit-jupiter-4.10.0.jar;C:\Users\Josclen Raposo\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.1\junit-jupiter-api-5.9.1.jar;C:\Users\Josclen Raposo\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\Josclen Raposo\.m2\repository\org\junit\platform\junit-platform-commons\1.9.1\junit-platform-commons-1.9.1.jar;C:\Users\Josclen Raposo\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Josclen Raposo\.m2\repository\org\junit\jupiter\junit-jupiter\5.9.0\junit-jupiter-5.9.0.jar;C:\Users\Josclen Raposo\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.9.0\junit-jupiter-params-5.9.0.jar;C:\Users\Josclen Raposo\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.9.0\junit-jupiter-engine-5.9.0.jar;C:\Users\Josclen Raposo\.m2\repository\org\junit\platform\junit-platform-engine\1.9.0\junit-platform-engine-1.9.0.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\JOSCLE~1\AppData\Local\Temp\surefire8138052329190719780\surefirebooter916685443816580682.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\JOSCLE~1\AppData\Local\Temp\surefire14820902128245747630\surefirebooter6120370167623952933.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.2+8-86"/>
@@ -57,13 +57,13 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="testTicketPurchaseForChildOrInfantWithoutAdult" classname="uk.gov.dwp.uc.pairtest.TicketServiceImplTest" time="1.318"/>
-  <testcase name="testTicketPurchaseForAnAdultOnly" classname="uk.gov.dwp.uc.pairtest.TicketServiceImplTest" time="0.052"/>
+  <testcase name="testTicketPurchaseForChildOrInfantWithoutAdult" classname="uk.gov.dwp.uc.pairtest.TicketServiceImplTest" time="1.382"/>
+  <testcase name="testTicketPurchaseForAnAdultOnly" classname="uk.gov.dwp.uc.pairtest.TicketServiceImplTest" time="0.051"/>
   <testcase name="testPurchaseForZeroTickets" classname="uk.gov.dwp.uc.pairtest.TicketServiceImplTest" time="0.002"/>
-  <testcase name="testSeatReservationForAnAdultOnly" classname="uk.gov.dwp.uc.pairtest.TicketServiceImplTest" time="0.002"/>
+  <testcase name="testSeatReservationForAnAdultOnly" classname="uk.gov.dwp.uc.pairtest.TicketServiceImplTest" time="0.003"/>
   <testcase name="testTicketPurchaseValidityIfAdultsLessThanInfants" classname="uk.gov.dwp.uc.pairtest.TicketServiceImplTest" time="0.002"/>
   <testcase name="testTicketPurchaseWithInvalidAccountId" classname="uk.gov.dwp.uc.pairtest.TicketServiceImplTest" time="0.002"/>
   <testcase name="testExceedMaximumTicketPurchaseLimit" classname="uk.gov.dwp.uc.pairtest.TicketServiceImplTest" time="0.003"/>
-  <testcase name="testSeatReservation" classname="uk.gov.dwp.uc.pairtest.TicketServiceImplTest" time="0.004"/>
-  <testcase name="testPurchaseTickets" classname="uk.gov.dwp.uc.pairtest.TicketServiceImplTest" time="0.004"/>
+  <testcase name="testSeatReservation" classname="uk.gov.dwp.uc.pairtest.TicketServiceImplTest" time="0.005"/>
+  <testcase name="testPurchaseTickets" classname="uk.gov.dwp.uc.pairtest.TicketServiceImplTest" time="0.005"/>
 </testsuite>

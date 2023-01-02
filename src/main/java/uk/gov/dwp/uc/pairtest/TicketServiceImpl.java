@@ -43,7 +43,7 @@ public class TicketServiceImpl implements TicketService {
             throw new InvalidPurchaseException("Account id not valid");
         }
 
-        if (sumOfTicketType(TicketTypeRequest.Type.ADULT, ticketTypeRequests) < 1 &&
+        if (sumOfTicketType(TicketTypeRequest.Type.ADULT, ticketTypeRequests) < MINIMUM_TICKETS_PURCHASE_LIMIT &&
                 (sumOfTicketType(TicketTypeRequest.Type.CHILD, ticketTypeRequests) > 0 ||
                         sumOfTicketType(TicketTypeRequest.Type.INFANT, ticketTypeRequests) > 0)) {
             throw new InvalidPurchaseException("Child and Infant tickets cannot be purchased without purchasing an Adult ticket");
