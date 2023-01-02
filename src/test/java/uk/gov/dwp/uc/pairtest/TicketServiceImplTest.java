@@ -83,6 +83,20 @@ class TicketServiceImplTest {
     }
 
     @Test
+    void testPurchaseForZeroTickets() {
+        typeRequest = new TicketTypeRequest(TicketTypeRequest.Type.ADULT, 0);
+
+        InvalidPurchaseException exception = assertThrows(
+                InvalidPurchaseException.class,
+                () -> {
+                    ticketService.purchaseTickets(1L, typeRequest);
+                }
+        );
+
+        assertEquals("Must purchase 1 ticket at minimum", exception.getMessage());
+    }
+
+    @Test
     void testExceedMaximumTicketPurchaseLimit() {
         typeRequest = new TicketTypeRequest(TicketTypeRequest.Type.ADULT, 19);
         typeRequest2 = new TicketTypeRequest(TicketTypeRequest.Type.CHILD, 2);

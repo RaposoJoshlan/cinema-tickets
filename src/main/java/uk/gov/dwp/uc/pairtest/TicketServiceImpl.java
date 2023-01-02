@@ -11,11 +11,8 @@ import java.util.stream.Stream;
 
 public class TicketServiceImpl implements TicketService {
 
-    /**
-     * Should only have private methods other than the one below.
-     */
-
     private static final int MAXIMUM_TICKETS_PURCHASE_LIMIT = 20;
+    private static final int MINIMUM_TICKETS_PURCHASE_LIMIT = 1;
 
     private final TicketPaymentService ticketPaymentService;
     private final SeatReservationService seatReservationService;
@@ -48,12 +45,16 @@ public class TicketServiceImpl implements TicketService {
 
         if (sumOfTicketType(TicketTypeRequest.Type.ADULT, ticketTypeRequests) < 1 &&
                 (sumOfTicketType(TicketTypeRequest.Type.CHILD, ticketTypeRequests) > 0 ||
-                        sumOfTicketType(TicketTypeRequest.Type.CHILD, ticketTypeRequests) > 0)) {
+                        sumOfTicketType(TicketTypeRequest.Type.INFANT, ticketTypeRequests) > 0)) {
             throw new InvalidPurchaseException("Child and Infant tickets cannot be purchased without purchasing an Adult ticket");
         }
 
         if (sumOfTicketType(TicketTypeRequest.Type.ADULT, ticketTypeRequests) < sumOfTicketType(TicketTypeRequest.Type.INFANT, ticketTypeRequests)) {
             throw new InvalidPurchaseException("Infants will be sitting on an Adult's lap. 1 Infant per Adult");
+        }
+
+        if (totalNoTickets < MINIMUM_TICKETS_PURCHASE_LIMIT) {
+            throw new InvalidPurchaseException("Must purchase 1 ticket at minimum");
         }
 
         if (totalNoTickets > MAXIMUM_TICKETS_PURCHASE_LIMIT) {
